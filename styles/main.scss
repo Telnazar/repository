@@ -1,0 +1,2695 @@
+@import "./base/reset";
+@import './base/fonts/fonts';
+@import './base/variables';
+@import './base/mixins';
+
+@media screen and (max-width: 780px) and (min-width: 320px) {
+    .header {
+        width: 320px;
+        height: 540px;
+        margin: auto;
+        background-image: url('./images/background.png');
+    }
+
+    .login {
+        width: 164px;
+        height: 76px;
+        display: flex;
+        margin: auto;
+
+        &__left {
+            width: 55px;
+            height: 100%;
+            // margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__top {
+                color: $logo-color;
+                font-size: 14px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 400;
+                padding: 5px 0 0 1px;
+                word-spacing: 2px;
+            }
+        }
+
+        &__right {
+            width: 104px;
+            height: 100%;
+            margin: 0 0 0 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__sign {
+                width: 90px;
+                height: 36px;
+                border: 2px solid $logo-color;
+                border-radius: 20px;
+                background-color: transparent;
+                color: $logo-color;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                padding: 4px 0px 0 0px;
+                word-spacing: 3px;
+            }
+        }
+    }
+    .login2 {
+        display: none;
+    }
+
+    .navText {
+        width: 320px;
+        height: 350px;
+        margin: auto;
+        text-align: center;
+        margin-top: 80px;
+
+        &__first {
+            color: $logo-color;
+            font-size: 20px;
+            font-family: "Montserrat",
+                sans-serif;
+            font-weight: 700;
+            padding-left: 4px;
+            letter-spacing: 1px;
+        }
+
+        &__second {
+            color: $logo-color;
+            font-size: 30px;
+            margin-top: 29px;
+            font-family: "Montserrat",
+                sans-serif;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            line-height: 36px;
+            padding-right: 3px;
+        }
+
+        &__third {
+            color: $logo-color;
+            font-size: 18px;
+            margin-top: 7px;
+            font-family: 'Roboto Light', sans-serif;
+            font-weight: 300;
+            padding: 0 19px;
+            line-height: 24px;
+        }
+
+        &__find {
+            width: 280px;
+            height: 40px;
+            border: 1px solid #FF4E50;
+            border-radius: 20px;
+            background-color: #FF4E50;
+            color: $logo-color;
+            font-family: "Montserrat",
+                sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            margin-top: 16px;
+            letter-spacing: 0.8px;
+        }
+    }
+
+    .main {
+        width: 300px;
+        height: 3135px;
+        margin: auto;
+
+        .dreamInfo {
+            width: 300px;
+            height: 815px;
+            margin: auto;
+            margin-top: 37px;
+
+            &__text {
+                color: #444444;
+                font-size: 22px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                text-align: center;
+                letter-spacing: 1.35px;
+                padding-left: 5px;
+            }
+
+            .dream {
+                width: 300px;
+                height: 740px;
+                margin: auto;
+
+                &__step1 {
+                    @include steps (300px, 240px, 17px);
+                    background-image: url('./images/step1.png');
+                    padding-left: 20px;
+                    padding-right: 15px;
+    
+                    &__first {
+                        width: 70px;
+                        height: 20px;
+                        border: 1px solid #FF4E50;
+                        border-radius: 10px;
+                        background-color: #FF4E50;
+                        color: $logo-color;
+                        font-size: 10px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 400;
+                        margin-top: 64px;
+                        letter-spacing: 2px;
+                        padding-top: 6px;
+                        padding-left: 8px;
+                    }
+    
+                    &__second {
+                        color: $logo-color;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                        font-size: 24px;
+                        margin-top: 45px;
+                        line-height: 15px;
+                        letter-spacing: 1.3px;
+                    }
+    
+                    &__third {
+                        color: $logo-color;
+                        font-size: 14px;
+                        font-family: 'Roboto Light',
+                            sans-serif;
+                        font-weight: 300;
+                        margin-top: 24px;
+                        padding: 0 7px 0 0;
+                    }
+                }
+    
+                &__step2 {
+                    @include steps (300px, 240px, 11px);
+                    background-image: url('./images/step2.png');
+                    padding-left: 20px;
+                    padding-right: 15px;
+    
+                    &__first {
+                        width: 70px;
+                        height: 20px;
+                        border: 1px solid #FF4E50;
+                        border-radius: 10px;
+                        background-color: #FF4E50;
+                        color: $logo-color;
+                        font-size: 10px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 400;
+                        margin-top: 93px;
+                        letter-spacing: 2px;
+                        padding-top: 6px;
+                        padding-left: 8px;
+                    }
+    
+                    &__second {
+                        color: $logo-color;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                        font-size: 24px;
+                        margin-top: 31px;
+                        line-height: 15px;
+                        letter-spacing: 1px;
+                    }
+    
+                    &__third {
+                        color: $logo-color;
+                        font-size: 14px;
+                        font-family: 'Roboto Light',
+                            sans-serif;
+                        font-weight: 300;
+                        margin-top: 24px;
+                        padding: 0 12px 0 0;
+                    }
+                }
+    
+                &__step3 {
+                    @include steps (300px, 240px, 9px);
+                    background-image: url('./images/step3.png');
+                    padding-left: 20px;
+                    padding-right: 15px;
+    
+                    &__first {
+                        width: 70px;
+                        height: 20px;
+                        border: 1px solid #FF4E50;
+                        border-radius: 10px;
+                        background-color: #FF4E50;
+                        color: $logo-color;
+                        font-size: 10px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 400;
+                        margin-top: 64px;
+                        letter-spacing: 2px;
+                        padding-top: 6px;
+                        padding-left: 8px;
+                    }
+    
+                    &__second {
+                        color: $logo-color;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                        font-size: 24px;
+                        margin-top: 45px;
+                        line-height: 15px;
+                        letter-spacing: 1.3px;
+                    }
+    
+                    &__third {
+                        color: $logo-color;
+                        font-size: 14px;
+                        font-family: 'Roboto Light',
+                            sans-serif;
+                        font-weight: 300;
+                        margin-top: 24px;
+                        padding: 0 7px 0 0;
+                    }
+                }   
+            }
+        }
+
+        .partnersInfo {
+            width: 300px;
+            height: 1060px;
+            margin: auto;
+            text-align: center;
+
+            &__title {
+                color: #444444;
+                font-size: 22px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                padding: 0 10px 0 10px;
+                letter-spacing: 1.2px;
+                line-height: 26px;
+            }
+
+            .partnersTotal {
+                width: 300px;
+                height: 887px;
+                margin: auto;
+
+                .partnersFirst {
+                    width: 300px;
+                    height: 445px;
+                    margin: auto;
+
+                    &__Bradley {
+                        width: 242px;
+                        height: 205px;
+                        margin: auto;
+                        text-align: center;
+                        margin-top: 15px;
+                        position: relative;
+        
+                        &::after {
+                            content: url(../styles/images/music2.png);
+                            width: 32px;
+                            height: 32px;
+                            background-color: #FF4E50;
+                            border: 5px solid $logo-color;
+                            border-radius: 25px;
+                            display: block;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: 85px;
+                            right: 56px;
+                            z-index: 2;
+                        }
+        
+                        &__photo {
+                            border: 1px solid $logo-color;
+                            border-radius: 70px;
+                            position: relative;
+                        }
+        
+                        &__first {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: "Montserrat",
+                                sans-serif;
+                            font-weight: 700;
+                            margin-top: 17px;
+                            letter-spacing: 1px;
+                        }
+        
+                        &__second {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: 'Roboto Light',
+                                sans-serif;
+                            font-weight: 300;
+                            padding-top: 24px;
+                        }
+                    }
+        
+                    &__Diana {
+                        width: 236px;
+                        height: 224px;
+                        margin: auto;
+                        text-align: center;
+                        margin-top: 16px;
+                        position: relative;
+        
+                        &::after {
+                            content: url(../styles/images/Shape.png);
+                            width: 32px;
+                            height: 32px;
+                            background-color: #FFA710;
+                            border: 5px solid $logo-color;
+                            border-radius: 25px;
+                            display: block;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: 85px;
+                            right: 53px;
+                            z-index: 2;
+                        }
+        
+                        &__photo {
+                            border: 1px solid $logo-color;
+                            border-radius: 70px;
+                            position: relative;
+                        }
+        
+                        &__first {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: "Montserrat",
+                                sans-serif;
+                            font-weight: 700;
+                            margin-top: 17px;
+                            letter-spacing: 1px;
+                        }
+        
+                        &__second {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: 'Roboto Light',
+                                sans-serif;
+                            font-weight: 300;
+                            padding-top: 28px;
+                        }
+                    }
+                }
+                .partnersSecond {
+                    width: 300px;
+                    height: 450px;
+                    margin: auto;
+
+                    &__Marie {
+                        width: 236px;
+                        height: 205px;
+                        margin: auto;
+                        text-align: center;
+                        margin-top: 16px;
+                        position: relative;
+        
+                        &::after {
+                            content: url(../styles/images/brush.png);
+                            width: 32px;
+                            height: 32px;
+                            background-color: #19D4CA;
+                            border: 5px solid $logo-color;
+                            border-radius: 25px;
+                            display: block;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: 85px;
+                            right: 53px;
+                            z-index: 2;
+                        }
+        
+                        &__photo {
+                            border: 1px solid $logo-color;
+                            border-radius: 70px;
+                            position: relative;
+                        }
+        
+                        &__first {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: "Montserrat",
+                                sans-serif;
+                            font-weight: 700;
+                            margin-top: 17px;
+                            letter-spacing: 1px;
+                        }
+        
+                        &__second {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: 'Roboto Light',
+                                sans-serif;
+                            font-weight: 300;
+                            padding-top: 24px;
+                        }
+                    }
+        
+                    &__Christopher {
+                        width: 236px;
+                        height: 205px;
+                        margin: auto;
+                        text-align: center;
+                        margin-top: 16px;
+                        position: relative;
+        
+                        &::after {
+                            content: url(../styles/images/airplane.png);
+                            width: 32px;
+                            height: 32px;
+                            background-color: #667DF3;
+                            border: 5px solid $logo-color;
+                            border-radius: 25px;
+                            display: block;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: 85px;
+                            right: 53px;
+                            z-index: 2;
+                        }
+        
+                        &__photo {
+                            border: 1px solid $logo-color;
+                            border-radius: 70px;
+                            position: relative;
+                        }
+        
+                        &__first {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: "Montserrat",
+                                sans-serif;
+                            font-weight: 700;
+                            margin-top: 17px;
+                            letter-spacing: 1px;
+                        }
+        
+                        &__second {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: 'Roboto Light',
+                                sans-serif;
+                            font-weight: 300;
+                            padding-top: 24px;
+                        }
+                    }
+                }
+            }         
+
+            &__bottom {
+                width: 280px;
+                height: 40px;
+                border: 2px solid #FF4E50;
+                border-radius: 20px;
+                background-color: $logo-color;
+                color: #FF4E50;
+                font-size: 14px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                margin-top: 38px;
+                letter-spacing: 1px;
+                padding-top: 3px;
+                padding-left: 12px;
+            }
+        }
+
+        .holiday {
+            width: 300px;
+            height: 1060px;
+            margin: auto;
+            text-align: center;
+
+            &__title {
+                color: #444444;
+                font-size: 22px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                margin-top: 6px;
+                letter-spacing: 1px;
+                padding: 0px 10px 0 10px;
+                line-height: 27px;
+            }
+
+            .holidayFirst {
+                width: 300px;
+                height: 381px;
+                margin: auto;
+                
+                &__sport {
+                    @include steps (300px, 120px, 33px);
+                    background-image: url('./images/Sport.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: baseline;
+                    padding: 21px 55px 0 55px;
+                    line-height: 27px;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+    
+                &__health {
+                    @include steps (300px, 120px, 10px);
+                    background-image: url('./images/Health.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: baseline;
+                    padding: 33px 55px 0 55px;
+                    line-height: 27px;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+    
+                &__extreme {
+                    @include steps (300px, 120px, 10px);
+                    background-image: url('./images/Extreme.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: baseline;
+                    padding: 33px 55px 0 55px;
+                    line-height: 27px;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .holidaySecond {
+                width: 300px;
+                height: 250px;
+                margin: auto;
+
+                &__games {
+                    @include steps (300px, 120px, 10px);
+                    background-image: url('./images/Games.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+    
+                &__culture {
+                    @include steps (300px, 120px, 10px);
+                    background-image: url('./images/Culture.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+            }
+            
+            .holidayThird {
+                width: 300px;
+                height: 250px;
+                margin: auto;
+
+                &__relax {
+                    @include steps (300px, 120px, 10px);
+                    background-image: url('./images/Relax.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+    
+                &__travel {
+                    @include steps (300px, 120px, 10px);
+                    background-image: url('./images/Travel.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            &__bottom1 {
+                color: #444444;
+                font-size: 22px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                margin-top: 35px;
+                letter-spacing: 1px;
+                padding: 0px 10px 0 10px;
+                line-height: 27px;
+            }
+
+            &__bottom2 {
+                color: #666666;
+                font-size: 18px;
+                font-family: 'Roboto Light',
+                    sans-serif;
+                font-weight: 300;
+                margin-top: 18px;
+            }
+
+            &__info {
+                width: 280px;
+                height: 80px;
+                margin: auto;
+
+                input[name="interest"] {
+                    width: 280px;
+                    height: 40px;
+                    border: #D4D4D4 solid 1px;
+                    font-family: 'Roboto Light',
+                        sans-serif;
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: #D4D4D4;
+                    margin-top: 12px;
+                    padding: 6px 0 0 13px;
+                }
+    
+                &__button {
+                    width: 280px;
+                    height: 40px;
+                    border: 1px solid #FF4E50;
+                    border-radius: 20px;
+                    background-color: #FF4E50;
+                    color: $logo-color;
+                    font-family: "Montserrat",
+                        sans-serif;
+                    font-weight: 700;
+                    font-size: 14px;
+                    margin-top: 10px;
+                    letter-spacing: 0.8px;
+                    padding-left: 17px;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 320px;
+        height: 210px;
+        margin: auto;
+
+        .footerInfo {
+            width: 320px;
+            height: 210px;
+            margin: auto;
+            border-top: #FF4E50 solid 2px;
+
+            &__dreamshare {
+                width: 320px;
+                height: 45px;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 15px;
+                padding-left: 3px;
+                letter-spacing: 0.5px;
+
+                &__text {
+                    color: #FF4E50;
+                    font-size: 16px;
+                    font-family: "Montserrat",
+                        sans-serif;
+                    font-weight: 400;
+                }
+            }
+
+            &__company {
+                width: 320px;
+                height: 63px;
+                margin: auto;
+
+                &__text {
+                    color: #444444;
+                    font-size: 14px;
+                    font-family: "Montserrat",
+                        sans-serif;
+                    font-weight: 700;
+                    text-align: center;
+                    padding-top: 10px;
+                    letter-spacing: 1px;
+                }
+
+                &__list1 {
+                    width: 320px;
+                    height: 31px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &__item {
+                        color: #999999;
+                        font-family: 'Roboto Light',
+                            sans-serif;
+                        font-weight: 300;
+                        font-size: 14px;
+                        padding: 0 6px 0 7px;
+                        cursor: pointer;
+                    }
+                }
+
+                &__list2 {
+                    width: 320px;
+                    height: 21px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &__item {
+                        color: #999999;
+                        font-family: 'Roboto Light',
+                            sans-serif;
+                        font-weight: 300;
+                        font-size: 14px;
+                        padding: 0 6px 0 6px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            &__companyP {
+                display: none;
+            }
+
+            &__partners {
+                width: 320px;
+                height: 45px;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 15px;
+                letter-spacing: 0.7px;
+
+                &__text {
+                    color: #444444;
+                    font-size: 14px;
+                    font-family: "Montserrat",
+                        sans-serif;
+                    font-weight: 700;
+                }
+            }
+
+            &__logo {
+                width: 320px;
+                height: 45px;
+                margin: auto;
+                display: block;
+
+                &__text {
+                    width: 100px;
+                    height: 24px;
+                    margin: auto;
+                    padding: 8px 0 0 12px;
+                    letter-spacing: 1px;
+
+                    &__info {
+                        color: #CCCCCC;
+                        font-size: 10px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+
+                &__photo {
+                    width: 110px;
+                    height: 24px;
+                    background-image: url('./images/Areto.png');
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1460px) and (min-width: 781px) {
+    .header {
+        width: 768px;
+        height: 700px;
+        margin: auto;
+        background-image: url('./images/Mid-Background.png');
+
+        .login {
+            display: none;
+        }
+
+        .login2 {
+            width: 100%;
+            height: 116px;
+            display: flex;
+            
+
+            &__first {
+                width: 250px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                letter-spacing: 1px;
+
+                &__text {
+                    color: $logo-color;
+                    font-size: 20px;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 700;
+                    padding: 5px 0 0 1px;
+                    word-spacing: 2px;
+                }
+            }
+    
+            &__left {
+                width: 357px;
+                height: 100%;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+    
+                &__top {
+                    color: $logo-color;
+                    font-size: 14px;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 400;
+                    padding: 5px 0 0 1px;
+                    word-spacing: 2px;
+                }
+            }
+    
+            &__right {
+                width: 115px;
+                height: 100%;
+                margin: 0 0 0 9px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                &__sign {
+                    width: 90px;
+                    height: 36px;
+                    border: 2px solid $logo-color;
+                    border-radius: 20px;
+                    background-color: transparent;
+                    color: $logo-color;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    padding: 4px 0px 0 0px;
+                    word-spacing: 3px;
+                }
+            }
+        }
+    
+        .navText {
+            width: 470px;
+            height: 350px;
+            margin: auto;
+            text-align: center;
+            margin-top: 106px;
+    
+            &__first {
+                display: none;
+            }
+    
+            &__second {
+                color: $logo-color;
+                font-size: 52px;
+                margin-top: 29px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                letter-spacing: 2px;
+                line-height: 65px;
+            }
+    
+            &__third {
+                color: $logo-color;
+                font-size: 24px;
+                margin-top: 25px;
+                font-family: 'Roboto Light', sans-serif;
+                font-weight: 300;
+                padding: 0 19px;
+                line-height: 24px;
+            }
+    
+            &__find {
+                width: 225px;
+                height: 40px;
+                border: 1px solid #FF4E50;
+                border-radius: 20px;
+                background-color: #FF4E50;
+                color: $logo-color;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                margin-top: 38px;
+                letter-spacing: 0.8px;
+            }
+        }
+    }
+
+    .main {
+        width: 768px;
+        height: 2638px;
+        margin: auto;
+
+        .dreamInfo {
+            width: 748px;
+            height: 550px;
+            margin: auto;
+            margin-top: 97px;
+
+            &__text {
+                color: #444444;
+                font-size: 22px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                text-align: center;
+                letter-spacing: 1.35px;
+                padding-left: 5px;
+            }
+
+            .dream {
+                width: 748px;
+                height: 440px;
+                margin: auto;
+                display: flex;
+
+                &__step1 {
+                    @include steps (236px, 400px, 37px);
+                    background-image: url('./images/Mid-Step\ 1.png');
+                    padding-left: 20px;
+                    padding-right: 15px;
+                    display: flex;
+                    justify-content: end;
+                    flex-direction: column;
+    
+                    &__first {
+                        width: 70px;
+                        height: 20px;
+                        border: 1px solid #FF4E50;
+                        border-radius: 10px;
+                        background-color: #FF4E50;
+                        color: $logo-color;
+                        font-size: 10px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 400;
+                        letter-spacing: 2px;
+                        padding-top: 6px;
+                        padding-left: 8px;
+                    }
+    
+                    &__second {
+                        color: $logo-color;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                        font-size: 24px;
+                        margin-top: 43px;
+                        line-height: 15px;
+                        letter-spacing: 1.3px;
+                    }
+    
+                    &__third {
+                        color: $logo-color;
+                        font-size: 14px;
+                        font-family: 'Roboto Light',
+                            sans-serif;
+                        font-weight: 300;
+                        margin-top: 31px;
+                        padding: 0 7px 13px 0;
+                    }
+                }
+    
+                &__step2 {
+                    @include steps (236px, 400px, 37px);
+                    margin-left: 20px;
+                    background-image: url('./images/Mid-Step\ 2.png');
+                    padding-left: 20px;
+                    padding-right: 15px;
+                    display: flex;
+                    justify-content: end;
+                    flex-direction: column;
+    
+                    &__first {
+                        width: 70px;
+                        height: 20px;
+                        border: 1px solid #FF4E50;
+                        border-radius: 10px;
+                        background-color: #FF4E50;
+                        color: $logo-color;
+                        font-size: 10px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 400;
+                        letter-spacing: 2px;
+                        padding-top: 6px;
+                        padding-left: 8px;
+                    }
+    
+                    &__second {
+                        color: $logo-color;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                        font-size: 24px;
+                        margin-top: 15px;
+                        line-height: 15px;
+                        letter-spacing: 1px;
+                    }
+    
+                    &__third {
+                        color: $logo-color;
+                        font-size: 14px;
+                        font-family: 'Roboto Light',
+                            sans-serif;
+                        font-weight: 300;
+                        margin-top: 23px;
+                        padding: 0 12px 15px 0;
+                    }
+                }
+    
+                &__step3 {
+                    @include steps (236px, 400px, 37px);
+                    margin-left: 20px;
+                    background-image: url('./images/Mid-Step\ 3.png');
+                    padding-left: 20px;
+                    padding-right: 15px;
+                    display: flex;
+                    justify-content: end;
+                    flex-direction: column;
+    
+                    &__first {
+                        width: 70px;
+                        height: 20px;
+                        border: 1px solid #FF4E50;
+                        border-radius: 10px;
+                        background-color: #FF4E50;
+                        color: $logo-color;
+                        font-size: 10px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 400;
+                        margin-top: 64px;
+                        letter-spacing: 2px;
+                        padding-top: 6px;
+                        padding-left: 8px;
+                    }
+    
+                    &__second {
+                        color: $logo-color;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                        font-size: 24px;
+                        margin-top: 45px;
+                        line-height: 15px;
+                        letter-spacing: 1.3px;
+                    }
+    
+                    &__third {
+                        color: $logo-color;
+                        font-size: 14px;
+                        font-family: 'Roboto Light',
+                            sans-serif;
+                        font-weight: 300;
+                        margin-top: 29px;
+                        padding: 0 7px 15px 0;
+                    }
+                }   
+            }
+        }
+
+        .partnersInfo {
+            width: 492px;
+            height: 697px;
+            margin: auto;
+            text-align: center;
+
+            &__title {
+                color: #444444;
+                font-size: 22px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                padding: 0 8px 0 10px;
+                letter-spacing: 1.2px;
+                line-height: 33px;
+            }
+
+            .partnersTotal {
+                width: 492px;
+                height: 537px;
+                margin: auto;
+
+                .partnersFirst {
+                    width: 492px;
+                    height: 273px;
+                    margin: auto;
+                    display: flex;
+
+                    &__Bradley {
+                        width: 242px;
+                        height: 205px;
+                        margin: auto;
+                        text-align: center;
+                        margin-top: 31px;
+                        position: relative;
+        
+                        &::after {
+                            content: url(../styles/images/music2.png);
+                            width: 32px;
+                            height: 32px;
+                            background-color: #FF4E50;
+                            border: 5px solid $logo-color;
+                            border-radius: 25px;
+                            display: block;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: 85px;
+                            right: 56px;
+                            z-index: 2;
+                        }
+        
+                        &__photo {
+                            border: 1px solid $logo-color;
+                            border-radius: 70px;
+                            position: relative;
+                        }
+        
+                        &__first {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: "Montserrat",
+                                sans-serif;
+                            font-weight: 700;
+                            margin-top: 17px;
+                            letter-spacing: 1px;
+                        }
+        
+                        &__second {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: 'Roboto Light',
+                                sans-serif;
+                            font-weight: 300;
+                            padding-top: 24px;
+                        }
+                    }
+        
+                    &__Diana {
+                        width: 236px;
+                        height: 224px;
+                        margin: auto;
+                        text-align: center;
+                        margin-top: 31px;
+                        position: relative;
+        
+                        &::after {
+                            content: url(../styles/images/Shape.png);
+                            width: 32px;
+                            height: 32px;
+                            background-color: #FFA710;
+                            border: 5px solid $logo-color;
+                            border-radius: 25px;
+                            display: block;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: 85px;
+                            right: 53px;
+                            z-index: 2;
+                        }
+        
+                        &__photo {
+                            border: 1px solid $logo-color;
+                            border-radius: 70px;
+                            position: relative;
+                        }
+        
+                        &__first {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: "Montserrat",
+                                sans-serif;
+                            font-weight: 700;
+                            margin-top: 17px;
+                            letter-spacing: 1px;
+                        }
+        
+                        &__second {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: 'Roboto Light',
+                                sans-serif;
+                            font-weight: 300;
+                            padding-top: 28px;
+                        }
+                    }
+                }
+                .partnersSecond {
+                    width: 492px;
+                    height: 230px;
+                    margin: auto;
+                    display: flex;
+
+                    &__Marie {
+                        width: 236px;
+                        height: 205px;
+                        margin: auto;
+                        text-align: center;
+                        margin-top: 16px;
+                        position: relative;
+        
+                        &::after {
+                            content: url(../styles/images/brush.png);
+                            width: 32px;
+                            height: 32px;
+                            background-color: #19D4CA;
+                            border: 5px solid $logo-color;
+                            border-radius: 25px;
+                            display: block;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: 85px;
+                            right: 53px;
+                            z-index: 2;
+                        }
+        
+                        &__photo {
+                            border: 1px solid $logo-color;
+                            border-radius: 70px;
+                            position: relative;
+                        }
+        
+                        &__first {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: "Montserrat",
+                                sans-serif;
+                            font-weight: 700;
+                            margin-top: 17px;
+                            letter-spacing: 1px;
+                        }
+        
+                        &__second {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: 'Roboto Light',
+                                sans-serif;
+                            font-weight: 300;
+                            padding-top: 24px;
+                        }
+                    }
+        
+                    &__Christopher {
+                        width: 236px;
+                        height: 205px;
+                        margin: auto;
+                        text-align: center;
+                        margin-top: 16px;
+                        position: relative;
+        
+                        &::after {
+                            content: url(../styles/images/airplane.png);
+                            width: 32px;
+                            height: 32px;
+                            background-color: #667DF3;
+                            border: 5px solid $logo-color;
+                            border-radius: 25px;
+                            display: block;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: 85px;
+                            right: 53px;
+                            z-index: 2;
+                        }
+        
+                        &__photo {
+                            border: 1px solid $logo-color;
+                            border-radius: 70px;
+                            position: relative;
+                        }
+        
+                        &__first {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: "Montserrat",
+                                sans-serif;
+                            font-weight: 700;
+                            margin-top: 17px;
+                            letter-spacing: 1px;
+                        }
+        
+                        &__second {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: 'Roboto Light',
+                                sans-serif;
+                            font-weight: 300;
+                            padding-top: 24px;
+                        }
+                    }
+                }
+            }         
+
+            &__bottom {
+                width: 180px;
+                height: 40px;
+                border: 2px solid #FF4E50;
+                border-radius: 20px;
+                background-color: $logo-color;
+                color: #FF4E50;
+                font-size: 14px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                letter-spacing: 1px;
+                padding-top: 3px;
+                padding-left: 12px;
+            }
+        }
+
+        .holiday {
+            width: 748px;
+            height: 1031px;
+            margin: auto;
+            text-align: center;
+
+            &__title {
+                color: #444444;
+                font-size: 22px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                margin-top: 6px;
+                letter-spacing: 1px;
+                padding: 0px 10px 0 10px;
+                line-height: 27px;
+            }
+
+            .holidayFirst {
+                width: 748px;
+                height: 350px;
+                margin: auto;
+                display: flex;
+                
+                &__sport {
+                    @include steps (236px, 310px, 35px);
+                    background-image: url('./images/Mid-Sport.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 55px 24px 55px;
+                    line-height: 27px;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+    
+                &__health {
+                    @include steps (236px, 310px, 35px);
+                    margin-left: 21px;
+                    background-image: url('./images/Mid-Healath.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 40px 0 40px;
+                    line-height: 27px;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+    
+                &__extreme {
+                    @include steps (236px, 310px, 35px);
+                    margin-left: 21px;
+                    background-image: url('./images/Mid-Extreme.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 24px 0px 24px;
+                    line-height: 27px;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .holidaySecond {
+                width: 748px;
+                height: 336px;
+                margin: auto;
+                display: flex;
+
+                &__games {
+                    @include steps (236px, 310px, 16px);
+                    background-image: url('./images/Mid-Games.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+    
+                &__culture {
+                    @include steps (492px, 310px, 16px);
+                    margin-left: 21px;                
+                    background-image: url('./images/Mid-Culture.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+            }
+            
+            .holidayThird {
+                width: 748px;
+                height: 378px;
+                margin: auto;
+                display: flex;
+
+                &__relax {
+                    @include steps (492px, 310px, 10px);
+                    background-image: url('./images/Mid-Relax.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+    
+                &__travel {
+                    @include steps (236px, 310px, 10px);
+                    margin-left: 20px;
+                    background-image: url('./images/Mid-Travel.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            &__bottom1 {
+                color: #444444;
+                font-size: 22px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                margin-top: 35px;
+                letter-spacing: 1px;
+                padding: 0px 10px 0 10px;
+                line-height: 27px;
+            }
+
+            &__bottom2 {
+                color: #666666;
+                font-size: 18px;
+                font-family: 'Roboto Light',
+                    sans-serif;
+                font-weight: 300;
+                margin-top: 51px;
+            }
+
+            &__info {
+                width: 482px;
+                height: 80px;
+                margin: auto;
+                display: flex;
+
+                input[name="interest"] {
+                    width: 299px;
+                    height: 40px;
+                    border: #D4D4D4 solid 1px;
+                    font-family: 'Roboto Light',
+                        sans-serif;
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: #D4D4D4;
+                    margin-top: 23px;
+                    padding: 6px 0 0 13px;
+                }
+    
+                &__button {
+                    width: 172px;
+                    height: 40px;
+                    border: 1px solid #FF4E50;
+                    border-radius: 20px;
+                    background-color: #FF4E50;
+                    color: $logo-color;
+                    font-family: "Montserrat",
+                        sans-serif;
+                    font-weight: 700;
+                    font-size: 14px;
+                    margin-top: 23px;
+                    margin-left: 10px;
+                    letter-spacing: 0.8px;
+                    padding-left: 11px;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 768px;
+        height: 224px;
+        margin: auto;
+
+        .footerInfo {
+            width: 768px;
+            height: 224px;
+            margin: auto;
+            border-top: #FF4E50 solid 2px;
+            display: flex;
+
+            &__dreamshare {
+                width: 254px;
+                height: 45px;
+                margin: 38px 0 0 41px;
+                letter-spacing: 0.5px;
+
+                &__text {
+                    color: #FF4E50;
+                    font-size: 16px;
+                    font-family: "Montserrat",
+                        sans-serif;
+                    font-weight: 400;
+                }
+            }
+            &__company {
+                display: none;
+            }
+
+            &__companyP {
+                width: 239px;
+                height: 63px;
+
+                &__text {
+                    color: #444444;
+                    font-size: 14px;
+                    font-family: "Montserrat",
+                        sans-serif;
+                    font-weight: 700;
+                    text-align: center;
+                    padding-top: 41px;
+                    letter-spacing: 1px;
+                    padding-bottom: 6px;
+                }
+
+                &__list1 {
+                    width: 320px;
+                    height: 31px;
+                    
+                    &__item {
+                        color: #999999;
+                        font-family: 'Roboto Light',
+                            sans-serif;
+                        font-weight: 300;
+                        font-size: 14px;
+                        padding: 12px 6px 0px 87px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            &__partners {
+                width: 320px;
+                height: 45px;
+
+                &__text {
+                    color: #444444;
+                    font-size: 14px;
+                    font-family: "Montserrat",
+                        sans-serif;
+                    font-weight: 700;
+                    padding-top: 41px;
+                    padding-left: 18px;
+                    letter-spacing: 1px;
+                }
+            }
+
+            &__logo {
+                width: 320px;
+                height: 45px;
+
+                &__text {
+                    width: 140px;
+                    height: 24px;
+                    margin-top: 34px;
+                    padding: 7px 0 0 57px;
+                    letter-spacing: 1px;
+
+                    &__info {
+                        color: #CCCCCC;
+                        font-size: 10px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+
+                &__photo {
+                    width: 110px;
+                    height: 24px;
+                    background-image: url('./images/Areto.png');
+                    margin: 0 0 0 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1461px) {
+    .header {
+        width: 1440px;
+        height: 700px;
+        margin: auto;
+        background-image: url('./images/Desc-Background.png');
+
+        .login {
+            display: none;
+        }
+
+        .login2 {
+            width: 100%;
+            height: 116px;
+            display: flex;
+            
+
+            &__first {
+                width: 649px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                letter-spacing: 1px;
+
+                &__text {
+                    color: $logo-color;
+                    font-size: 20px;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 700;
+                    padding: 5px 0 0 1px;
+                    word-spacing: 2px;
+                }
+            }
+    
+            &__left {
+                width: 388px;
+                height: 100%;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+    
+                &__top {
+                    color: $logo-color;
+                    font-size: 14px;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 400;
+                    padding: 5px 0 0 1px;
+                    word-spacing: 2px;
+                }
+            }
+    
+            &__right {
+                width: 115px;
+                height: 100%;
+                margin: 0 0 0 9px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                &__sign {
+                    width: 90px;
+                    height: 36px;
+                    border: 2px solid $logo-color;
+                    border-radius: 20px;
+                    background-color: transparent;
+                    color: $logo-color;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    padding: 4px 0px 0 0px;
+                    word-spacing: 3px;
+                }
+            }
+        }
+    
+        .navText {
+            width: 470px;
+            height: 350px;
+            margin: auto;
+            text-align: center;
+            margin-top: 106px;
+    
+            &__first {
+                display: none;
+            }
+    
+            &__second {
+                color: $logo-color;
+                font-size: 52px;
+                margin-top: 29px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                letter-spacing: 2px;
+                line-height: 65px;
+            }
+    
+            &__third {
+                color: $logo-color;
+                font-size: 24px;
+                margin-top: 25px;
+                font-family: 'Roboto Light', sans-serif;
+                font-weight: 300;
+                padding: 0 19px;
+                line-height: 24px;
+            }
+    
+            &__find {
+                width: 225px;
+                height: 40px;
+                border: 1px solid #FF4E50;
+                border-radius: 20px;
+                background-color: #FF4E50;
+                color: $logo-color;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                margin-top: 38px;
+                letter-spacing: 0.8px;
+            }
+        }
+    }
+
+    .main {
+        width: 940px;
+        height: 2398px;
+        margin: auto;
+
+        .dreamInfo {
+            width: 940px;
+            height: 550px;
+            margin: auto;
+            margin-top: 93px;
+
+            &__text {
+                color: #444444;
+                font-size: 26px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                text-align: center;
+                letter-spacing: 1.35px;
+                padding-left: 5px;
+            }
+
+            .dream {
+                width: 940px;
+                height: 440px;
+                margin: auto;
+                display: flex;
+
+                &__step1 {
+                    @include steps (300px, 400px, 37px);
+                    background-image: url('./images/Step\ 1\ Des.png');
+                    padding-left: 20px;
+                    padding-right: 15px;
+                    display: flex;
+                    justify-content: end;
+                    flex-direction: column;
+    
+                    &__first {
+                        width: 70px;
+                        height: 20px;
+                        border: 1px solid #FF4E50;
+                        border-radius: 10px;
+                        background-color: #FF4E50;
+                        color: $logo-color;
+                        font-size: 10px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 400;
+                        letter-spacing: 2px;
+                        padding-top: 6px;
+                        padding-left: 6px;
+                        margin-left: 5px;
+                    }
+    
+                    &__second {
+                        color: $logo-color;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                        font-size: 24px;
+                        margin-top: 22px;
+                        line-height: 26px;
+                        letter-spacing: 1.3px;
+                        padding: 0 0 0 4px;
+                    }
+    
+                    &__third {
+                        color: $logo-color;
+                        font-size: 14px;
+                        font-family: 'Roboto Light',
+                            sans-serif;
+                        font-weight: 300;
+                        margin-top: 26px;
+                        padding: 0 7px 19px 2px;
+                    }
+                }
+    
+                &__step2 {
+                    @include steps (300px, 400px, 37px);
+                    margin-left: 20px;
+                    background-image: url('./images/Step\ 2\ Des.png');
+                    padding-left: 20px;
+                    padding-right: 15px;
+                    display: flex;
+                    justify-content: end;
+                    flex-direction: column;
+    
+                    &__first {
+                        width: 70px;
+                        height: 20px;
+                        border: 1px solid #FF4E50;
+                        border-radius: 10px;
+                        background-color: #FF4E50;
+                        color: $logo-color;
+                        font-size: 10px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 400;
+                        letter-spacing: 2px;
+                        padding-top: 6px;
+                        padding-left: 8px;
+                        margin-left: 5px;
+                    }
+    
+                    &__second {
+                        color: $logo-color;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                        font-size: 24px;
+                        margin-top: 30px;
+                        line-height: 15px;
+                        letter-spacing: 1px;
+                        padding: 0 0 0 7px;
+                    }
+    
+                    &__third {
+                        color: $logo-color;
+                        font-size: 14px;
+                        font-family: 'Roboto Light',
+                            sans-serif;
+                        font-weight: 300;
+                        margin-top: 23px;
+                        padding: 0 12px 20px 5px;
+                    }
+                }
+    
+                &__step3 {
+                    @include steps (300px, 400px, 37px);
+                    margin-left: 20px;
+                    background-image: url('./images/Step\ 3\ Des.png');
+                    padding-left: 20px;
+                    padding-right: 15px;
+                    display: flex;
+                    justify-content: end;
+                    flex-direction: column;
+    
+                    &__first {
+                        width: 70px;
+                        height: 20px;
+                        border: 1px solid #FF4E50;
+                        border-radius: 10px;
+                        background-color: #FF4E50;
+                        color: $logo-color;
+                        font-size: 10px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 400;
+                        margin-top: 64px;
+                        letter-spacing: 2px;
+                        padding-top: 6px;
+                        padding-left: 6px;
+                        margin-left: 4px;
+                    }
+    
+                    &__second {
+                        color: $logo-color;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                        font-size: 24px;
+                        margin-top: 23px;
+                        line-height: 26px;
+                        letter-spacing: 1.3px;
+                        padding: 0 0 0 4px;
+                    }
+    
+                    &__third {
+                        color: $logo-color;
+                        font-size: 14px;
+                        font-family: 'Roboto Light',
+                            sans-serif;
+                        font-weight: 300;
+                        margin-top: 24px;
+                        padding: 0 7px 21px 5px;
+                    }
+                }   
+            }
+        }
+
+        .partnersInfo {
+            width: 940px;
+            height: 455px;
+            margin: auto;
+            text-align: center;
+
+            &__title {
+                color: #444444;
+                font-size: 26px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                padding: 0 8px 0 10px;
+                letter-spacing: 1.2px;
+                line-height: 33px;
+            }
+
+            .partnersTotal {
+                width: 940px;
+                height: 281px;
+                margin: auto;
+                display: flex;
+
+                .partnersFirst {
+                    width: 470px;
+                    height: 273px;
+                    margin: auto;
+                    display: flex;
+
+                    &__Bradley {
+                        width: 212px;
+                        height: 205px;
+                        margin: auto;
+                        text-align: center;
+                        margin-top: 31px;
+                        position: relative;
+        
+                        &::after {
+                            content: url(../styles/images/music2.png);
+                            width: 32px;
+                            height: 32px;
+                            background-color: #FF4E50;
+                            border: 5px solid $logo-color;
+                            border-radius: 25px;
+                            display: block;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: 85px;
+                            right: 41px;
+                            z-index: 2;
+                        }
+        
+                        &__photo {
+                            border: 1px solid $logo-color;
+                            border-radius: 70px;
+                            position: relative;
+                        }
+        
+                        &__first {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: "Montserrat",
+                                sans-serif;
+                            font-weight: 700;
+                            margin-top: 17px;
+                            letter-spacing: 1px;
+                        }
+        
+                        &__second {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: 'Roboto Light',
+                                sans-serif;
+                            font-weight: 300;
+                            padding-top: 24px;
+                        }
+                    }
+        
+                    &__Diana {
+                        width: 236px;
+                        height: 224px;
+                        margin: auto;
+                        text-align: center;
+                        margin-top: 31px;
+                        position: relative;
+        
+                        &::after {
+                            content: url(../styles/images/Shape.png);
+                            width: 32px;
+                            height: 32px;
+                            background-color: #FFA710;
+                            border: 5px solid $logo-color;
+                            border-radius: 25px;
+                            display: block;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: 85px;
+                            right: 48px;
+                            z-index: 2;
+                        }
+        
+                        &__photo {
+                            border: 1px solid $logo-color;
+                            border-radius: 70px;
+                            position: relative;
+                        }
+        
+                        &__first {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: "Montserrat",
+                                sans-serif;
+                            font-weight: 700;
+                            margin-top: 17px;
+                            letter-spacing: 1px;
+                        }
+        
+                        &__second {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: 'Roboto Light',
+                                sans-serif;
+                            font-weight: 300;
+                            padding-top: 23px;
+                        }
+                    }
+                }
+                .partnersSecond {
+                    width: 470px;
+                    height: 230px;
+                    margin: auto;
+                    display: flex;
+
+                    &__Marie {
+                        width: 251px;
+                        height: 205px;
+                        margin: auto;
+                        text-align: center;
+                        margin-top: 10px;
+                        position: relative;
+        
+                        &::after {
+                            content: url(../styles/images/brush.png);
+                            width: 32px;
+                            height: 32px;
+                            background-color: #19D4CA;
+                            border: 5px solid $logo-color;
+                            border-radius: 25px;
+                            display: block;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: 84px;
+                            right: 59px;
+                            z-index: 2;
+                        }
+        
+                        &__photo {
+                            border: 1px solid $logo-color;
+                            border-radius: 70px;
+                            position: relative;
+                        }
+        
+                        &__first {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: "Montserrat",
+                                sans-serif;
+                            font-weight: 700;
+                            margin-top: 17px;
+                            letter-spacing: 1px;
+                        }
+        
+                        &__second {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: 'Roboto Light',
+                                sans-serif;
+                            font-weight: 300;
+                            padding-top: 22px;
+                        }
+                    }
+        
+                    &__Christopher {
+                        width: 230px;
+                        height: 205px;
+                        margin: auto;
+                        text-align: center;
+                        margin-top: 10px;
+                        position: relative;
+        
+                        &::after {
+                            content: url(../styles/images/airplane.png);
+                            width: 32px;
+                            height: 32px;
+                            background-color: #667DF3;
+                            border: 5px solid $logo-color;
+                            border-radius: 25px;
+                            display: block;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: 84px;
+                            right: 43px;
+                            z-index: 2;
+                        }
+        
+                        &__photo {
+                            border: 1px solid $logo-color;
+                            border-radius: 70px;
+                            position: relative;
+                        }
+        
+                        &__first {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: "Montserrat",
+                                sans-serif;
+                            font-weight: 700;
+                            margin-top: 17px;
+                            letter-spacing: 1px;
+                        }
+        
+                        &__second {
+                            color: #444444;
+                            font-size: 14px;
+                            font-family: 'Roboto Light',
+                                sans-serif;
+                            font-weight: 300;
+                            padding-top: 22px;
+                        }
+                    }
+                }
+            }         
+
+            &__bottom {
+                width: 180px;
+                height: 40px;
+                border: 2px solid #FF4E50;
+                border-radius: 20px;
+                background-color: $logo-color;
+                color: #FF4E50;
+                font-size: 14px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                letter-spacing: 1px;
+                padding-top: 3px;
+                padding-left: 12px;
+                margin-top: 16px;
+            }
+        }
+
+        .holiday {
+            width: 940px;
+            height: 1031px;
+            margin: auto;
+            text-align: center;
+
+            &__title {
+                color: #444444;
+                font-size: 26px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                margin-top: 6px;
+                letter-spacing: 1px;
+                padding: 0px 10px 0 10px;
+                line-height: 27px;
+            }
+
+            .holidayFirst {
+                width: 940px;
+                height: 350px;
+                margin: auto;
+                display: flex;
+                
+                &__sport {
+                    @include steps (300px, 310px, 35px);
+                    background-image: url('./images/Des-Sport.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 31px 15px 24px 17px;
+                    line-height: 27px;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+    
+                &__health {
+                    @include steps (300px, 310px, 35px);
+                    margin-left: 21px;
+                    background-image: url('./images/Des-Healath.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px 25px 0 25px;
+                    line-height: 27px;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+    
+                &__extreme {
+                    @include steps (300px, 310px, 35px);
+                    margin-left: 21px;
+                    background-image: url('./images/Des-Extreme.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 3px 45px 0px 45px;
+                    line-height: 27px;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .holidaySecond {
+                width: 940px;
+                height: 336px;
+                margin: auto;
+                display: flex;
+
+                &__games {
+                    @include steps (300px, 310px, 16px);
+                    background-image: url('./images/Des-Games.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+    
+                &__culture {
+                    @include steps (620px, 310px, 16px);
+                    margin-left: 21px;                
+                    background-image: url('./images/Des-Culture.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+            }
+            
+            .holidayThird {
+                width: 940px;
+                height: 378px;
+                margin: auto;
+                display: flex;
+
+                &__relax {
+                    @include steps (620px, 310px, 10px);
+                    background-image: url('./images/Des-Relax.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+    
+                &__travel {
+                    @include steps (300px, 310px, 10px);
+                    margin-left: 20px;
+                    background-image: url('./images/Des-Travel.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    letter-spacing: 1px;
+    
+                    &__text {
+                        color: $logo-color;
+                        font-size: 22px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            &__bottom1 {
+                color: #444444;
+                font-size: 26px;
+                font-family: "Montserrat",
+                    sans-serif;
+                font-weight: 700;
+                margin-top: 35px;
+                letter-spacing: 1px;
+                padding: 0px 10px 0 10px;
+                line-height: 27px;
+            }
+
+            &__bottom2 {
+                color: #666666;
+                font-size: 18px;
+                font-family: 'Roboto Light',
+                    sans-serif;
+                font-weight: 300;
+                margin-top: 51px;
+            }
+
+            &__info {
+                width: 482px;
+                height: 80px;
+                margin: auto;
+                display: flex;
+
+                input[name="interest"] {
+                    width: 299px;
+                    height: 40px;
+                    border: #D4D4D4 solid 1px;
+                    font-family: 'Roboto Light',
+                        sans-serif;
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: #D4D4D4;
+                    margin-top: 23px;
+                    padding: 6px 0 0 13px;
+                }
+    
+                &__button {
+                    width: 172px;
+                    height: 40px;
+                    border: 1px solid #FF4E50;
+                    border-radius: 20px;
+                    background-color: #FF4E50;
+                    color: $logo-color;
+                    font-family: "Montserrat",
+                        sans-serif;
+                    font-weight: 700;
+                    font-size: 14px;
+                    margin-top: 23px;
+                    margin-left: 10px;
+                    letter-spacing: 0.8px;
+                    padding-left: 11px;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 1440px;
+        height: 224px;
+        margin: auto;
+
+        .footerInfo {
+            width: 1440px;
+            height: 224px;
+            margin: auto;
+            border-top: #FF4E50 solid 2px;
+            display: flex;
+
+            &__dreamshare {
+                width: 367px;
+                height: 45px;
+                margin: 38px 34px 0 5px;
+                letter-spacing: 0.5px;
+                display: flex;
+                justify-content: end;
+
+                &__text {
+                    color: #FF4E50;
+                    font-size: 16px;
+                    font-family: "Montserrat",
+                        sans-serif;
+                    font-weight: 400;
+                }
+            }
+            &__company {
+                display: none;
+            }
+
+            &__companyP {
+                width: 239px;
+                height: 63px;
+
+                &__text {
+                    color: #444444;
+                    font-size: 14px;
+                    font-family: "Montserrat",
+                        sans-serif;
+                    font-weight: 700;
+                    text-align: center;
+                    padding-top: 41px;
+                    letter-spacing: 1px;
+                    padding-bottom: 6px;
+                }
+
+                &__list1 {
+                    width: 320px;
+                    height: 31px;
+                    
+                    &__item {
+                        color: #999999;
+                        font-family: 'Roboto Light',
+                            sans-serif;
+                        font-weight: 300;
+                        font-size: 14px;
+                        padding: 12px 6px 0px 87px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            &__partners {
+                width: 409px;
+                height: 45px;
+
+                &__text {
+                    color: #444444;
+                    font-size: 14px;
+                    font-family: "Montserrat",
+                        sans-serif;
+                    font-weight: 700;
+                    padding-top: 41px;
+                    padding-left: 83px;
+                    letter-spacing: 1px;
+                }
+            }
+
+            &__logo {
+                width: 320px;
+                height: 45px;
+
+                &__text {
+                    width: 140px;
+                    height: 24px;
+                    margin-top: 34px;
+                    padding: 7px 0 0 57px;
+                    letter-spacing: 1px;
+
+                    &__info {
+                        color: #CCCCCC;
+                        font-size: 10px;
+                        font-family: "Montserrat",
+                            sans-serif;
+                        font-weight: 700;
+                    }
+                }
+
+                &__photo {
+                    width: 110px;
+                    height: 24px;
+                    background-image: url('./images/Areto.png');
+                    margin: 0 0 0 25px;
+                }
+            }
+        }
+    }
+}

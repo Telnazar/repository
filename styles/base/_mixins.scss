@@ -1,0 +1,5 @@
+@mixin steps ($w, $h, $m) {
+    width: $w;
+    height: $h;
+    margin-top: $m;
+}
